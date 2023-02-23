@@ -15,7 +15,7 @@ const MainHeader = () => {
         </div>
         <div>
           <button className="border-solid border-2 rounded-full w-20">
-            로그인
+            로그인 낼하자
           </button>
         </div>
       </div>
