@@ -4,10 +4,15 @@ import ArticleContainer from "./ArticleContainer";
 const MainBody = () => {
   return (
     <div className="w-full flex flex-wrap gap-10">
-      {data.map((v: any) => {
+      {data.map((v: any, i: number) => {
         return (
           // <div>
-          <ArticleContainer imgSrc={v.imgSrc} title={v.title} name={v.name} />
+          <ArticleContainer
+            key={`${v.name}-${i}`}
+            imgSrc={v.imgSrc}
+            title={v.title}
+            name={v.name}
+          />
           // </div>
         );
       })}

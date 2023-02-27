@@ -1,4 +1,5 @@
 import SearchIcon from "@/assets/icon/SearchIcon";
+import Link from "next/link";
 
 const MainHeader = () => {
   return (
@@ -9,9 +10,12 @@ const MainHeader = () => {
           <SearchIcon />
         </div>
         <div className="mr-[20px]">
-          <button className="border-solid border-2  rounded w-24">
+          <Link className="border-solid border-2  rounded w-24" href="/writing">
             새 글 작성
-          </button>
+          </Link>
+          {/* <button className="border-solid border-2  rounded w-24">
+            새 글 작성
+          </button> */}
         </div>
         <div>
           <button className="border-solid border-2 rounded-full w-20">
